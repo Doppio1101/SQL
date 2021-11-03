@@ -25,8 +25,12 @@ select * from user;
 ### 3. 아래 문법으로 실행
 
 ```sql
+ALTER user 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+#root의 비밀번호를 1234를 바꿈
 ALTER user '비밀번호를 바꾸려는 User'@'바꾸려는 User와 매칭되는 Host' IDENTIFIED WITH mysql_native_password BY '바꾸려는 비밀번호';
 ```
+
+
 
 
 
